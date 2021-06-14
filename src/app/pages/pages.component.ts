@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { SetttingService } from '../services/settting.service';
 
-declare function customInitFunction();
+// comentado por problemas con el sidebar - problema sidebar - codigo pasado al login
+// declare function customInitFunction();
   
 
 @Component({
@@ -17,7 +18,13 @@ export class PagesComponent implements OnInit {
   constructor( private settingService: SetttingService) { }
 
   ngOnInit(): void {
-    customInitFunction();
+    
+    // comentado por problemas con el sidebar - problema sidebar - codigo pasado al login
+    // setTimeout(() => {
+    //   console.log('pages ngOnInit():::call=>customInitFunction()');
+    //   customInitFunction();
+    // }, 3000);
+    
   }
 
 }

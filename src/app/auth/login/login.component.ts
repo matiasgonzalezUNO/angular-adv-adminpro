@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
+declare function customInitFunction();
+
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -15,6 +17,8 @@ export class LoginComponent implements OnInit {
 
   login(): void {
     // console.log('submit');
+    console.log('LoginComponent ngOnInit():::call=>customInitFunction()');
+      customInitFunction();
     this.router.navigateByUrl('/');
   }
 
